@@ -9,7 +9,7 @@ you show flycheck errors in the window title (which Emacs calls the
 ## Existing approaches
 
 Flycheck shows errors in the minibuffer by default. However, if
-you're using eldoc, you get flicker:
+you're also using eldoc, you can get flicker:
 
 ![flicker](eldoc_conflict.gif)
 
