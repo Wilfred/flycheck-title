@@ -37,7 +37,7 @@ of `frame-title-format'."
          (first-err (car flycheck-errs)))
     (if first-err
         (let* ((pretty-err (flycheck-error-format-message-and-id first-err))
-               (first-line (car (s-lines pretty-err))))
+               (first-line (car (split-string pretty-err "\n"))))
           (format "FlyC: %s" first-line))
       (format-mode-line flycheck-title--prev-format))))
 
