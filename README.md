@@ -3,7 +3,7 @@
 ![screenshot](flycheck_title.png)
 
 This package provides `flycheck-title-mode`, a minor mode that lets
-you show flycheck errors in the window title (what Emacs calls the
+you show flycheck errors in the window title (which Emacs calls the
 'frame title').
 
 ## Existing approaches
