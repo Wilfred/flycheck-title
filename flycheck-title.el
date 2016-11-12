@@ -1,4 +1,4 @@
-;;; flycheck-frame-title.el --- show flycheck errors in the frame title  -*- lexical-binding: t; -*-
+;;; flycheck-title.el --- show flycheck errors in the frame title  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2016
 
