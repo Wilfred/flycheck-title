@@ -4,7 +4,7 @@
 
 ;; Author: Wilfred Hughes <me@wilfred.me.uk>
 ;; Version: 1.0
-;; Package-Requires: ((flycheck "30"))
+;; Package-Requires: ((flycheck "30") (emacs "24"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -66,5 +66,5 @@ of `frame-title-format'."
           flycheck-title--prev-error-fn)
     (setq flycheck-title--prev-error-fn nil)))
 
-(provide 'flycheck-frame-title)
-;;; flycheck-frame-title.el ends here
+(provide 'flycheck-title)
+;;; flycheck-title.el ends here
