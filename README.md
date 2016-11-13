@@ -1,4 +1,5 @@
 # flycheck-title
+[![MELPA](http://melpa.org/packages/flycheck-title-badge.svg)](http://melpa.org/#/flycheck-title)
 
 ![screenshot](flycheck_title.png)
 
@@ -21,12 +22,10 @@ you're using completion pop-ups:
 
 ## How do I install it?
 
-Add `flycheck-title.el` to your `load-path`, then add the following to
+Install from MELPA, then add the following to
 your Emacs configuration:
 
 ``` emacs-lisp
 (with-eval-after-load 'flycheck
   (flycheck-title-mode))
 ```
-
-MELPA coming soon.
