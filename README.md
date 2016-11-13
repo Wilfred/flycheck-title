@@ -2,9 +2,8 @@
 
 ![screenshot](flycheck_title.png)
 
-This package provides `flycheck-title-mode`, a minor mode that lets
-you show flycheck errors in the window title (which Emacs calls the
-'frame title').
+flycheck-title lets you view flycheck messages in the frame title,
+keeping the minibuffer free for other things.
 
 ## Existing approaches
 
