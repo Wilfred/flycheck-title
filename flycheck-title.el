@@ -41,6 +41,7 @@ of `frame-title-format'."
           (format "FlyC: %s" first-line))
       (format-mode-line flycheck-title--prev-format))))
 
+;;;###autoload
 (define-minor-mode flycheck-title-mode
   "Global minor mode for showing flycheck errors in the frame title."
   :global t
