@@ -26,7 +26,7 @@ your Emacs configuration:
 
 ``` emacs-lisp
 (with-eval-after-load 'flycheck
-  (flycheck-pos-tip-mode))
+  (flycheck-title-mode))
 ```
 
 MELPA coming soon.
