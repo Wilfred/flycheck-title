@@ -3,7 +3,7 @@
 ;; Copyright (C) 2016
 
 ;; Author: Wilfred Hughes <me@wilfred.me.uk>
-;; Version: 1.0
+;; Version: 1.1
 ;; Package-Requires: ((flycheck "30") (emacs "24"))
 
 ;; This program is free software; you can redistribute it and/or modify
