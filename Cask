@@ -1,3 +1,3 @@
 (source melpa)
 
-(package-file "flycheck-frame-title.el")
+(package-file "flycheck-title.el")
