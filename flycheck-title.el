@@ -42,15 +42,19 @@
 (defvar flycheck-title--prev-format nil)
 (defvar flycheck-title--prev-error-fn nil)
 
+(defun flycheck-title--remove-newlines (s)
+  "Remove all the newlines in S, so we can show the full error in
+the frame title."
+  (replace-regexp-in-string "\n" ": " s t t))
+
 (defun flycheck-title--show ()
   "If there's a flycheck error at point, show that, otherwise use the previous value
 of `frame-title-format'."
   (let* ((flycheck-errs (flycheck-overlay-errors-at (point)))
          (first-err (car flycheck-errs)))
     (if first-err
-        (let* ((pretty-err (flycheck-error-format-message-and-id first-err))
-               (first-line (car (split-string pretty-err "\n"))))
-          (format "FlyC: %s" first-line))
+        (let* ((pretty-err (flycheck-error-format-message-and-id first-err)))
+          (format "FlyC: %s" (flycheck-title--remove-newlines pretty-err)))
       (format-mode-line flycheck-title--prev-format))))
 
 ;;;###autoload
